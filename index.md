@@ -3,7 +3,7 @@
 
 Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food-inspections), our goal is to provide insights into food quality in the Windy City. We want to explore what are the violations that restaurants make most often, how they change over time and are they connected to the area where restaurant is located.
 --->
-Imagine that you are traveling to Chicago next week. Should it be for business or leisure, you'll be staying in Chicago for four days and you would like to discover the local gastronomy. A morning coffee with a lake view, then lunch with an old friend in a local hidden gem place and, at the end of the day a nice and romantic dinner. 
+The PisoFirme project was carried out in Mexico
 
 But imagination is not enough to make such a perfect day happen! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
 
