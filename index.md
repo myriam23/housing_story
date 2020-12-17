@@ -17,7 +17,7 @@ The dataset we used contains information from inspections of restaurants and oth
 
 Let's start with a quick look on the inspection results of the past ten years.
 
-{% include results_of_inspections_per_year.html %}
+{% include scatter_agglomerative.html %}
 
 It seems that majority of the restaurants managed to pass their inspections before 2018 but afterwards we can see increase in inspections that passed with conditions. What may have caused that? It is clearly not enough to look just at pass and fail we would like to discover what are the reasons behind inspection failure.
 
