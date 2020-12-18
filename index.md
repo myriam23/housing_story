@@ -19,6 +19,11 @@ The effect of the housing improvement program on maternal happiness was then ass
 **Dependent variable** | **Control group** | **Model 1** | **Model 2** | **Model 3**
 --- | --- | --- | --- | --- |
 *Satisfcation with floor quality* | 0.511 (0.5) | 0.219 [0.023]*** | 0.223 [0.024]*** | 0.222 [0.026]***
+*Satisfcation with house quality* | 0.605 (0.489) | 0.092 [0.021]*** | 0.087 [0.021]*** | 0.084 [0.022]*** 
+*Satisfcation with life quality* | 0.601 (0.490) | 0.112 [0.022]*** | 0.112 [0.021]*** | 0.112 [0.022]*** 
+*Depression scale* | 18.532 (9.402) | -2.315 [0.616]*** | -.,417 [0.570]*** | -2.372 [0.562]***
+*Perceived stress scale* | 16.514 (6.914) | -1.751 [0.428]*** | -1,769 [0.396]*** | -1.742 [0.396]***
+
 
 
 *	**Satisfaction** with *floor quality*, *house quality* and *life quality* were significantly **increased** for mothers in households which received PFP
