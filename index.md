@@ -66,6 +66,8 @@ The K-Means algorithm did not rely only on the numerical variables to identify h
 
 {% include mean_satisfaction_agglomerative.html %}
 
+We can see that the clustering into the happy and the unhappy groups is also efficient regarding the numerical variables. The differences of means  between each these 3 variables is sufficient to reinforce the confidence we have in these clusters. 
+
 ## Propensity Score Matching of Households that received PFP
 
 The befenits for the households that received PFP compared to those that did not are already established. Our focus now is on differences between households that received PFP, but had different initial level of cement coverage. To ensure that we analyse the true treatment effect, we have to compare similar households. Because there was no measure of pre-project percent share of cemented floors for individual households, we created a dummy variable that was equal to **1** if the share of cement floors was **above the median** observed among treated housholds prior to the project and **0** if it was below the median.
