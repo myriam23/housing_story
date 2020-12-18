@@ -69,9 +69,9 @@ We can see that the clustering into the happy and the unhappy groups is also eff
 
 ## Propensity Score Matching of Households that received PFP
 
-The befenits for the households that received PFP compared to those that did not are already established. Our focus now is on differences between households that received PFP, but had different initial level of cement coverage. To ensure that we analyse the true treatment effect, we have to compare similar households. Because there was no measure of pre-project percent share of cemented floors for individual households, we created a dummy variable that was equal to **1** if the share of cement floors was **above the median** observed among treated housholds prior to the project and **0** if it was below the median.
+It has been established that households which received PFP had improved children health and mothers happiness. However, among said households, the initial share of cements in the house varied greatly. To ensure that we analyse the true treatment effect, we have to compare similar households in terms of initial cement coverage. Unfortunately, there was no measure of pre-project share of cemented floors for individual households. As such, we created the **Cement** variable which was equal to **1** if the share of cement floors was **above the median** observed among treated housholds prior to the project and **0** if it was below the median.
 
-Once the **dummy_cement** variable was computed, we calculated the propensity scores of having a percent share of cement floors above the median for each treated household. We used 3 different approaches to compute the propensity score:
+Once the Cement variable was computed, we calculated the propensity scores of having a share of cement floors above the median for each treated household. We used 3 different approaches to compute the propensity score:
 
 1. **Random Forest Classifier**
 2. **XGBoosting Classifier**
@@ -83,5 +83,12 @@ Once the propensity scores were computed, we matched treated household with simi
 
 {% include sample_matching.html %}
 
-In this 3D illustration, we randomly choose 4 houses and we represented them in the space defined by the 3 of the 4 variables used to calculate the propensity score, that determines this 3D representation. The forms represent the different classifiers and the colors characterize the 4 examples of house. First, the fact that all the matching with the different classifiers we used, for these 4 houses examples, are all contained in the same relatively little space, and that there are no outliers, show that the matching works with all these classifiers.  Then, we can see that for the green, two classifiers were able to make the same matching, and we observe the same phenomenon with the red one. Thus, this representation appears to be a good way to ensure that our classifiers work pretty well. Furthermore, this representation allows to observe the differences of matching between these classifiers 
+In this 3D illustration, we randomly chose 4 households and we represented them in the space defined by 3 of the 4 variables used to compute the propensity score. The symbols represent the different classifiers used for the different matchings, and the colors characterize the 4 sampled households. We see that for all classifers, the matches are close to each other on the three dimensions shown here. This suggests that the matching was well performed. For instance, the green (and red) household was matched to the same untreated household by two classifiers. <br/>
 
+Finally, we can study the **average treatment effect** obtained by each classifier, for each clustering strategy (K-Means and Agglomerative), to study whether or not the causal relationship determined by Cattaneo et. al is co-founded by the initial share of cement in the household. <br/>
+<center> $ATE = \frac{1}{N} + \sum \limits_{i}  Happy_{i} - Unhappy_{i} $</center> <br/>
+
+{% include ATE_final.html %}
+
+
+As shown above, the scores obtained are all negative which suggests that households with the lowest share of cement coverage prior to PFP demonstrate a higher increase in happiness following the project. However, the lowest score being -0.048, the effect is probably not very significant. 
