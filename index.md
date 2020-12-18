@@ -16,6 +16,11 @@ Before assessing the causal relationship between flooring quality and health and
 
 The effect of the housing improvement program on maternal happiness was then assessed through linear regressions of main variables of maternal happiness on a program dummy. All coefficients were statistically significant and the following results were observed:
 
+**Dependent variable** | **Control group** | **Model 1** | **Model 2** | **Model 3**
+--- | --- | --- | --- | --- |
+*Satisfcation with floor quality* | 0.511 (0.5) | 0.219 [0.023]*** | 0.223 [0.024]*** | 0.222 [0.026]***
+
+
 *	**Satisfaction** with *floor quality*, *house quality* and *life quality* were significantly **increased** for mothers in households which received PFP
 
 *	**Depression** and **stress levels** were significantly **decreased** for mothers in household which received PFP
@@ -59,7 +64,12 @@ The K-Means algorithm did not rely only on the numerical variables to identify h
 
 The befenits for the households that received PFP compared to those that did not are already established. Our focus now is on differences between households that received PFP, but had different initial level of cement coverage. To ensure that we analyse the true treatment effect, we have to compare similar households. Because there was no measure of pre-project percent share of cemented floors for individual households, we created a dummy variable that was equal to **1** if the share of cement floors was **above the median** observed among treated housholds prior to the project and **0** if it was below the median.
 
-Once the **dummy_cement** variable was computed for each household, we calculated the propensity score of having a percent share of cement floors above the median for each treated household. We used 3 different approaches to compute the propensity score:
-1.
-2.
-3.
+Once the **dummy_cement** variable was computed, we calculated the propensity scores of having a percent share of cement floors above the median for each treated household. We used 3 different approaches to compute the propensity score:
+
+1. **Random Forest Classifier**
+2. **XGBoosting Classifier**
+3. **Decision Trees**
+
+**FIGURE PROPENSITY SCORES DES 3 CLASSIFIERS**
+
+
