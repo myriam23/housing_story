@@ -25,7 +25,7 @@ The effect of the housing improvement program on maternal happiness was then ass
 *Perceived stress scale* | 16.514 (6.914) | -1.751 [0.428]*** | -1,769 [0.396]*** | -1.742 [0.396]***
 
 
-Overall, the following bservations were made:
+Overall, the following observations were made:
 
 *	**Satisfaction** with *floor quality*, *house quality* and *life quality* were significantly **increased** for mothers in households which received PFP
 
