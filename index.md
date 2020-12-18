@@ -25,10 +25,11 @@ The effect of the housing improvement program on maternal happiness was then ass
 *Perceived stress scale* | 16.514 (6.914) | -1.751 [0.428]*** | -1,769 [0.396]*** | -1.742 [0.396]***
 
 
+Overall, the following bservations were made:
 
 *	**Satisfaction** with *floor quality*, *house quality* and *life quality* were significantly **increased** for mothers in households which received PFP
 
-*	**Depression** and **stress levels** were significantly **decreased** for mothers in household which received PFP
+*	**Depression** and **stress levels** significantly **decreased** for mothers in household which received PFP
 
 While these effects demonstrated the benefits of the housing improvement program in all household that received it, they failed to account for differences in initial levels of cement flooring between household prior to the beginning of the project. Yes, the project was beneficial but… 
 
@@ -76,5 +77,9 @@ Once the **dummy_cement** variable was computed, we calculated the propensity sc
 3. **Decision Trees**
 
 **FIGURE PROPENSITY SCORES DES 3 CLASSIFIERS**
+
+Once the propensity scores were computed, we matched treated household with similar scores (**epsilon < 0.05**). The different methods gave different matching couples.
+
+**FIGURE MATCHING 3D**
 
 
