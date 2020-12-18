@@ -3,7 +3,25 @@
 
 Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food-inspections), our goal is to provide insights into food quality in the Windy City. We want to explore what are the violations that restaurants make most often, how they change over time and are they connected to the area where restaurant is located.
 --->
-The PisoFirme project was carried out in Mexico
+
+Food, water and housing are fundamental requirements for daily living. Although housing is considered essential for well-being, little work has been done to assess the direct causal relationship between housing and housing improvement programs on health and welfare. In their study, Cattaneo et. al set out to study how floor quality impacts the health of young children and the mental health and happiness of their mothers. They assessed the causal relationship by utilizing a wide collection of data from the Piso Firme Project (PFP), a large-scale attempt from the Mexican government that aimed to replace dirt floors by cement floors.
+
+PFP was first implemented locally in the state of Coahuila in 2000 and lasted until 2005. It was then gradually adopted in other states. The neighboring state, Durango, implemented the project only later and acted as a control region. To further enhance the comparability between treatment and control groups, the study was restricted to 3 municipalities located along the border: Torreón in the state of Coahuila (treatment) and Gómez Palacio and Lerdo in the state of Durango (control). All regions had similar socio-economical characteristics. 
+
+Before assessing the causal relationship between flooring quality and health and welfare, we had to make sure that PFP succeeded in providing adequate cement flooring to households. Prior to the beginning of the project in Coahuila, all three municipalities of interest had the same percentage share of rooms with cement floors in households. After the project finished in the state of Coahuila, although all three regions of interest experienced an increase in cement flooring to individual, Torreón showed a significantly increased percentage share of rooms with cement floors. The only significant difference between the regions was the implementation of PFP or not.
+
+{% include map_with_button.html.html %}
+
+The effect of the housing improvement program on maternal happiness was then assessed through linear regressions of main variables of maternal happiness on a program dummy. All coefficients were statistically significant and the following results were observed:
+
+•	**Satisfaction** with *floor quality*, *house quality* and *life quality* were significantly **increased** for mothers in households which received PFP
+•	**Depression** and **stress levels** were significantly **decreased** for mothers in household which received PFP
+
+While these effects demonstrated the benefits of the housing improvement program in all household that received it, they fails to account for differences in initial levels of cement flooring between household prior to the beginning of the project. 
+
+The project was beneficial but… *are there differences in terms of how beneficial the project was for maternal happiness based on the initial levels of cement in the household?* This is the question we seek to answer, and this is where our story begins…. Bear with us as we take you through our journey!
+The initial analysis in “Housing, Health and Happiness” analyzed the effect of PFP by regressing several maternal mental health measures on the program dummy. In order to gain deeper insight into all variables at once, the first thing we did was feature engineer one variable that would encompass all measures of mental health and tell if the mother in the household was happy or not: the “Happy” variable.  Since there was no actual label indicating whether a household mother was happy or not, we used several unsupervised machine learning approaches. The one that gave the optimal results was K-Means with 2 clusters. 
+
 
 But imagination is not enough to make such a perfect day happen! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
 
