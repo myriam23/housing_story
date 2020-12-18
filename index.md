@@ -4,6 +4,8 @@ PFP was first implemented locally in the state of Coahuila in 2000 and lasted un
 
 {% include pre_treatment_proportions.html %}
 
+Actually, there is one small difference between states above! Can you spot it:mag:? (Hint: it starts with *No wat...*)
+
 {% include pre_treatment_average.html %}
 
 Before assessing the causal relationship between flooring quality and health and welfare, we had to make sure that PFP succeeded in providing adequate cement flooring to households. Prior to the beginning of the project in Coahuila, all three municipalities of interest had the same percentage share of rooms with cement floors in households. After the project finished in the state of Coahuila, although all three regions of interest experienced an increase in cement flooring to individual, Torreón showed a significantly increased percentage share of rooms with cement floors. 
