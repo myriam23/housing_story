@@ -84,4 +84,5 @@ Once the propensity scores were computed, we matched treated household with simi
 
 {% include sample_matching.html %}
 
+In this 3D illustration, we randomly choose 4 houses and we represented them in the space defined by the 3 of the 4 variables used to calculate the propensity score, that determines this 3D representation. The forms represent the different classifiers and the colors characterize the 4 examples of house. First, the fact that all the matching with the different classifiers we used, for these 4 houses examples, are all contained in the same relatively little space, and that there are no outliers, show that the matching works with all these classifiers.  Then, we can see that for the green, two classifiers were able to make the same matching, and we observe the same phenomenon with the red one. Thus, this representation appears to be a good way to ensure that our classifiers work pretty well. Furthermore, this representation allows to observe the differences of matching between these classifiers 
 
