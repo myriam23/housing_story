@@ -28,9 +28,9 @@ This is the question we seek to answer, and this is where our story begins…. B
 
 ## Feature engineering a Happy variable
 
-The initial analysis in “Housing, Health and Happiness” analyzed the effect of PFP by regressing several maternal mental health measures on the program dummy. In order to gain deeper insight into all variables at once, the first thing we did was feature engineer one variable that would encompass all measures of maternal mental health and tell us if the mother in the household was happy or not: the “Happy” variable :slightly_smiling_face:. Since there was no actual label indicating whether a household mother was happy or not, we used several unsupervised machine learning approaches. The one that gave the optimal results was K-Means with 2 clusters. 
+The initial analysis in “Housing, Health and Happiness” analyzed the effect of PFP by regressing several maternal mental health measures on the program dummy. In order to gain deeper insight into all variables at once, the first thing we did was feature engineer one variable that would encompass all measures of maternal mental health and tell us if the mother in the household was happy or not: the “Happy” variable. Since there was no actual label indicating whether a household mother was happy or not, we used several unsupervised machine learning approaches. The one that gave the optimal results was K-Means with 2 clusters. 
 
-The K-Means clustering algorithm was run on the satisfaction and maternal mental health measures:
+The K-Means clustering algorithm was run using the following satisfaction and maternal mental health measures:
 
 * **Satisfaction with floor quality** (dummy variable)
 
@@ -44,19 +44,17 @@ The K-Means clustering algorithm was run on the satisfaction and maternal mental
 
 The K-Means algorithm identified two clusters and based on the classification, the *Happy* variable was created to be equal to **1** if the household mother was happy and **0** otherwise. The clusters and their labels can be visualised on the perceived stress vs the depression scale scatterplot below:
 
-**Scatterplot Kmeans**
+{% include scatter_agglomerative.html %}
 
-The clusters were intuitively correct. As perceived stress and depression increase, the chances of the mother being unhappy increase. The two clusters had significanlty differents distributions which further reinforced the idea that K-Means succeded in differentiating between happy and unhappy mothers.
+Although a distinct separation does not appear, the clusters are intuitively correct. As perceived stress and depression increase, the chances of the mother being unhappy increase. The two clusters had significanlty differents distributions of perceived stress scales and depression scales, which further reinforced the idea that K-Means succeded in differentiating between happy and unhappy mothers:
 
 **Boxplot KMeans PSS et CESDS**
 
-The K-Means algorithm did not rely only on the numerical variables to identify happy mothers. Mothers in both households had significantly different mean levels of satisfaction regarding floor quality, house quality and life quality.
+The K-Means algorithm did not rely only on the numerical variables to identify happy and unhappy mothers. Mothers in both households had significantly different mean levels of satisfaction regarding floor quality, house quality and life quality:
 
 **Scatter plot mean levels of satisfaction**
 
 ## Matching Households which received PFP by similarity
-
-{% include scatter_agglomerative.html %}
 
 It seems that majority of the restaurants managed to pass their inspections before 2018 but afterwards we can see increase in inspections that passed with conditions. What may have caused that? It is clearly not enough to look just at pass and fail we would like to discover what are the reasons behind inspection failure.
 
