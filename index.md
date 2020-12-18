@@ -42,11 +42,11 @@ The K-Means clustering algorithm was run on the satisfaction and maternal mental
 
 * **Depression scale** (numerical variable)
 
-The K-Means algorithm identified two clusters and based on the classification, the *Happy* variable was created to be equal to **1** if the household mother was and **0** otherwise. The clusters and their labels can be visualised on the perceived stress vs the depression scale scatterplot below:
+The K-Means algorithm identified two clusters and based on the classification, the *Happy* variable was created to be equal to **1** if the household mother was happy and **0** otherwise. The clusters and their labels can be visualised on the perceived stress vs the depression scale scatterplot below:
 
 **Scatterplot Kmeans**
 
-The cluster were intuitively correct. As perceived stress and depression increase, the chances of the mother being unhappy increase. The two clusters had significanlty differents distributions which further reinforced the idea that K-Means succeded in differentiating between happy and unhappy mothers.
+The clusters were intuitively correct. As perceived stress and depression increase, the chances of the mother being unhappy increase. The two clusters had significanlty differents distributions which further reinforced the idea that K-Means succeded in differentiating between happy and unhappy mothers.
 
 **Boxplot KMeans PSS et CESDS**
 
@@ -55,18 +55,6 @@ The K-Means algorithm did not rely only on the numerical variables to identify h
 **Scatter plot mean levels of satisfaction**
 
 ## Matching Households which received PFP by similarity
-
-But imagination is not enough to make such a perfect day happen! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
-
-**So, what would be your approach to find a good restaurant?** For sure, Google will be your friend in this exploration. Nowadays, few people visit places without checking user reviews on TripAdvisor and Facebook, and the magnificent pictures of food that restaurants publish on their Instagram profiles are often used as selection criteria. And let's not forget friends of friends of friends who have recently been in Chicago, who can often offer useful recommendations.
-
-Okay, those are pretty much standard approaches. Why not try something different? 
-
-What if we tell you that we looked at **restaurant's inspection results** to figure out where to eat in Chicago? That's right, thousands of inspection reports with notes of poor inspectors relating their encounters with cockroaches in pantries, or that they closed restaurants because they lacked defined vomiting procedures. When going to a restaurant, you rarely wonder if it fullfils all standards issued by the authorities. However, inspection results can be used as a non-standard approach to the "where-to-eat-tonight" problem, and are very useful to assess which restaurants in the Windy City are worth visiting. 
-
-The dataset we used contains information from inspections of restaurants and other food establishments in Chicago in the past ten years. Every inspection comes with basic information about the restaurant such as name, licence number, location, zip code, then the type of the inspection that was performed and, of course, the result of the inspection followed by a description of the violations discovered.
-
-Let's start with a quick look on the inspection results of the past ten years.
 
 {% include scatter_agglomerative.html %}
 
