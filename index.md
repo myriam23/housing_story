@@ -66,7 +66,7 @@ The K-Means algorithm did not rely only on the numerical variables to identify h
 
 {% include mean_satisfaction_agglomerative.html %}
 
-We can see that the clustering into the happy and the unhappy groups is also efficient regarding the numerical variables. The differences of means  between each these 3 variables is sufficient to reinforce the confidence we have in these clusters. 
+We can see that the clustering into the happy and the unhappy groups is also efficient regarding the numerical variables. The differences of means  between each of these 3 variables is sufficient to reinforce the confidence we have in these clusters. 
 
 ## Propensity Score Matching of Households that received PFP
 
