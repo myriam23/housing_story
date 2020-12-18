@@ -4,7 +4,7 @@ PFP was first implemented locally in the state of Coahuila in 2000 and lasted un
 
 {% include pre_treatment_proportions.html %}
 
-Actually, there is one small difference between states above! Can you spot it:mag:? (Hint: it starts with *No wat...*)
+Actually, there is one small difference between states above! Can you spot it :mag:? (*Hint: try to zoom in on the second comparison*)
 
 {% include pre_treatment_average.html %}
 
