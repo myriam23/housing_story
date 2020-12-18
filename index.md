@@ -87,8 +87,6 @@ In this 3D illustration, we randomly chose 4 households and we represented them 
 
 Finally, we can study the **average treatment effect** obtained by each classifier, for each clustering strategy (K-Means and Agglomerative), to study whether or not the causal relationship determined by Cattaneo et. al is co-founded by the initial share of cement in the household. <br/>
 
-{% include save.jpg %}
-
 {% include ATE_final.html %}
 
 
