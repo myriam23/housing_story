@@ -28,7 +28,7 @@ This is the question we seek to answer, and this is where our story begins…. B
 
 ## Feature engineering a Happy variable
 
-The initial analysis in “Housing, Health and Happiness” analyzed the effect of PFP by regressing several maternal mental health measures on the program dummy. In order to gain deeper insight into all variables at once, the first thing we did was feature engineer one variable that would encompass all measures of maternal mental health and tell us if the mother in the household was happy or not: the “Happy” variable:blush:. Since there was no actual label indicating whether a household mother was happy or not, we used several unsupervised machine learning approaches. The one that gave the optimal results was K-Means with 2 clusters. 
+The initial analysis in “Housing, Health and Happiness” analyzed the effect of PFP by regressing several maternal mental health measures on the program dummy. In order to gain deeper insight into all variables at once, the first thing we did was feature engineer one variable that would encompass all measures of maternal mental health and tell us if the mother in the household was happy or not: the “Happy” variable :slightly_smiling_face:. Since there was no actual label indicating whether a household mother was happy or not, we used several unsupervised machine learning approaches. The one that gave the optimal results was K-Means with 2 clusters. 
 
 The K-Means clustering algorithm was run on the satisfaction and maternal mental health measures:
 
