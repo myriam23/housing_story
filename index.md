@@ -10,7 +10,7 @@ PFP was first implemented locally in the state of Coahuila in 2000 and lasted un
 
 Before assessing the causal relationship between flooring quality and health and welfare, we had to make sure that PFP succeeded in providing adequate cement flooring to households. Prior to the beginning of the project in Coahuila, all three municipalities of interest had the same percentage share of rooms with cement floors in households. After the project finished in the state of Coahuila, although all three regions of interest experienced an increase in cement flooring to individual, Torreón showed a significantly increased percentage share of rooms with cement floors. The only significant difference between the regions was the implementation of PFP or not.
 
-{% include map_with_button.html.html %}
+{% include map_with_button.html %}
 
 The effect of the housing improvement program on maternal happiness was then assessed through linear regressions of main variables of maternal happiness on a program dummy. All coefficients were statistically significant and the following results were observed:
 
