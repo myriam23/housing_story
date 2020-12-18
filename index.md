@@ -56,15 +56,15 @@ The K-Means clustering algorithm was run using the following satisfaction and ma
 
 The K-Means algorithm identified two clusters and based on the classification, the *Happy* variable was created to be equal to **1** if the household mother was happy and **0** otherwise. The clusters and their labels can be visualised on the perceived stress vs the depression scale scatterplot below:
 
-{% include scatter_agglomerative.html %}
+{% include scatter_KM.html %}
 
 Although a distinct separation does not appear, the clusters are intuitively correct. As perceived stress and depression increase, the chances of the mother being unhappy increase. The two clusters had significanlty differents distributions of perceived stress scales and depression scales, which further reinforced the idea that K-Means succeded in differentiating between happy and unhappy mothers:
 
-**Boxplot KMeans PSS et CESDS**
+{% include violin_KM.html %}
 
 The K-Means algorithm did not rely only on the numerical variables to identify happy and unhappy mothers. Mothers in both households had significantly different mean levels of satisfaction regarding floor quality, house quality and life quality:
 
-**Scatter plot mean levels of satisfaction**
+{% include mean_satisfaction_agglomerative.html %}
 
 ## Propensity Score Matching of Households that received PFP
 
@@ -76,10 +76,10 @@ Once the **dummy_cement** variable was computed, we calculated the propensity sc
 2. **XGBoosting Classifier**
 3. **Decision Trees**
 
-**FIGURE PROPENSITY SCORES DES 3 CLASSIFIERS**
+{% include cement_classifier_all.html %}
 
 Once the propensity scores were computed, we matched treated household with similar scores (**epsilon < 0.05**). The different methods gave different matching couples.
 
-**FIGURE MATCHING 3D**
+{% include sample_matching.html %}
 
 
