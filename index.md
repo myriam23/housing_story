@@ -81,11 +81,14 @@ Once the Cement variable was computed, we calculated the propensity scores of ha
 
 Once the propensity scores were computed, we matched treated household with similar scores (**epsilon < 0.05**). The different methods gave different matching couples.
 
+
 {% include sample_matching.html %}
 
 In this 3D illustration, we randomly chose 4 households and we represented them in the space defined by 3 of the 4 variables used to compute the propensity score. The symbols represent the different classifiers used for the different matchings, and the colors characterize the 4 sampled households. We see that for all classifers, the matches are close to each other on the three dimensions shown here. This suggests that the matching was well performed. For instance, the green (and red) household was matched to the same untreated household by two classifiers. <br/>
 
-Finally, we can study the **average treatment effect** obtained by each classifier, for each clustering strategy (K-Means and Agglomerative), to study whether or not the causal relationship determined by Cattaneo et. al is co-founded by the initial share of cement in the household. <br/>
+Finally, we can study the **average treatment effect** obtained by each classifier, for each clustering strategy (K-Means and Agglomerative), to assess whether or not the causal relationship determined by Cattaneo et. al is co-founded by the initial share of cement in the household. <br/>
+
+[ATE computation](save.png)
 
 {% include ATE_final.html %}
 
