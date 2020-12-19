@@ -16,7 +16,7 @@ To add your interactive (e.g plotly) plot:
 2. Include it in index.md using this syntax: 
 	{% include MY_AWESOME_FILENAME.html %}
 3. Push
-4. Wait a **minute** and check if your plot shows correctly :) here: https://jczestochowska.github.io/
+4. Wait a **minute** and check if your plot shows correctly :) here: https://myriam23.github.io/
 
 
 To add your plot as an image file:
