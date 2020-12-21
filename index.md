@@ -4,7 +4,7 @@ In their [study](https://www.aeaweb.org/articles?id=10.1257/pol.1.1.75), Cattane
 
 {% include pre_treatment_proportions.html %}
 
-Actually, there is one small difference above between the proportions observed in each census in both states ! Can you spot it? &#x1F50E (*Hint: try to zoom in on the second comparison*)
+Actually, there is one small difference above between the proportions observed in each census in both states ! Can you spot it? (*Hint: try to zoom in on the second comparison*)
 
 {% include pre_treatment_average.html %}
 
